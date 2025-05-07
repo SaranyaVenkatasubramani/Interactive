@@ -1,5 +1,5 @@
 # Ex.08 Design of Interactive Image Gallery
-## Date:03-05-2025
+## Date:07-05-2025
 
 ## AIM:
 To design a web application for an inteactive image gallery with minimum five images.
@@ -25,7 +25,7 @@ Validate the HTML and CSS code.
 Publish the website in the given URL.
 
 ## PROGRAM :
-'''''
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,14 +42,12 @@ Publish the website in the given URL.
       overflow: hidden;
       position: relative;
     }
-
-    .gallery-container {
+.gallery-container {
       position: relative;
       width: 100%;
       height: 100vh;
     }
-
-    .gallery-item {
+.gallery-item {
       position: absolute;
       width: 180px;
       height: 180px;
@@ -59,18 +57,15 @@ Publish the website in the given URL.
       cursor: pointer;
       transition: transform 0.3s;
     }
-
-    .gallery-item img {
+.gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-
-    .gallery-item:hover {
+.gallery-item:hover {
       transform: scale(1.1);
     }
-
-    /* Adjusted positions for larger size */
+/* Adjusted positions for larger size */
     .item1 { top: 10%; left: 8%; }
     .item2 { top: 5%; left: 38%; }
     .item3 { top: 10%; right: 8%; }
@@ -80,8 +75,7 @@ Publish the website in the given URL.
     .item7 { bottom: 18%; left: 26%; }
     .item8 { bottom: 18%; right: 26%; }
     .item9 { bottom: 6%; left: 42%; }
-
-    .lightbox {
+.lightbox {
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
@@ -91,14 +85,12 @@ Publish the website in the given URL.
       justify-content: center;
       z-index: 1000;
     }
-
-    .lightbox img {
+.lightbox img {
       max-width: 90%;
       max-height: 90%;
       border-radius: 12px;
     }
-
-    .close {
+     .close {
       position: absolute;
       top: 20px;
       right: 30px;
@@ -106,8 +98,7 @@ Publish the website in the given URL.
       color: white;
       cursor: pointer;
     }
-
-    .footer {
+ .footer {
       position: absolute;
       bottom: 10px;
       width: 100%;
@@ -120,16 +111,18 @@ Publish the website in the given URL.
 </head>
 <body>
 
-  <div class="gallery-container">
-    <div class="gallery-item item1"><img src="./vishy.png" alt="Actor 1"></div>
+<div class="gallery-container">
+<div class="gallery-item item1"><img src="./vishy.png" alt="Actor 1"></div>
     <div class="gallery-item item2"><img src="./mag.png" alt="Actor 2"></div>
     <div class="gallery-item item3"><img src="./pragg.png" alt="Actor 3"></div>
-    <div class="gallery-item item4"><img src="./garry.png" alt="Actor 4"></div>
-    <div class="gallery-item item5"><img src="./gukesh.png" alt="Actor 5"></div>
-    <div class="gallery-item item6"><img src="./humpy.png" alt="Actor 6"></div>
-    <div class="gallery-item item7"><img src="./ram.png" alt="Actor 7"></div>
-    <div class="gallery-item item8"><img src="./hari.png" alt="Actor 8"></div>
-    <div class="gallery-item item9"><img src="./ani.png" alt="Actor 9"></div>
+    <div class="gallery-item item4"><img src="./gukesh.png" alt="Actor 4"></div>
+    <div class="gallery-item item5"><img src="./humpy.png" alt="Actor 5"></div>
+    <div class="gallery-item item6"><img src="./hari.png" alt="Actor 6"></div>
+    <div class="gallery-item item7"><img src="./ani.png" alt="Actor 7"></div>
+    <div class="gallery-item item8"><img src="./arjun.png" alt="Actor 8"></div>
+    <div class="gallery-item item9"><img src="./ram.png" alt="Actor 9"></div>
+  </div>
+
   </div>
 
   <div class="lightbox">
@@ -169,15 +162,13 @@ Publish the website in the given URL.
 
 </body>
 </html>
-
-
-
-'''''
+```
 
 
 ## OUTPUT:
 
 ![alt text](image.png)
+![alt text](image-1.png)
 
 ## RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
